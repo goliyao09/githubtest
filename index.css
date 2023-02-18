@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  background: pink;
+  position: relative;
+  /* min-height: 200vh; */
+}
+
+li,
+button {
+  cursor: pointer;
+}
+
+nav {
+  background: purple;
+  /* width: 90%; */
+
+  font-family: Verdana;
+  /* height: 50px; */
+
+  /* position: fixed; */
+}
+
+nav ul {
+  /* height: 100%; */
+  /* border: solid 2px white; */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+
+  padding: 20px;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 540px) {
+  nav {
+    background: skyblue;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+/* text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; */
